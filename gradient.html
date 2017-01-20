@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变练习</title>
+    <style>
+        /*线性渐变*/
+
+        .sail{
+            float:left;
+            margin-left: 10px;
+        }
+
+        .one{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(left top,black,white);
+            background: linear-gradient(left top,black,white);
+        }
+
+        .tow{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(left top,#ace,#f96);
+            background: linear-gradient(left top,#ace,#f96);
+        }
+
+        .three{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(left top,#ace,#f96 5%,#ace,#f96 95%,#ace);
+            background: linear-gradient(left top,#ace,#f96 5%,#ace,#f96 95%,#ace);
+        }
+
+        .four{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(0deg,black,white 50%,black,white 50%,black);
+            background: linear-gradient(0deg,black,white 50%,black,white 50%,black);
+        }
+
+        .five{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(left top,black,white 10%,black,white 40%,black,white 80%,black);
+            background: linear-gradient(left top,black,white 10%,black,white 40%,black,white 80%,black);
+        }
+
+        .six{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(90deg,black,white 50%,black,white 50%,black);
+            background: linear-gradient(90deg,black,white 50%,black,white 50%,black);
+        }
+
+        .seven{
+            width: 150px;
+            height: 80px;
+            background: -webkit-linear-gradient(30deg,black,white 10%,black,white 40%,black,white 80%,black);
+            background: linear-gradient(30deg,black,white 10%,black,white 40%,black,white 80%,black);
+        }
+        .eight{
+            width: 250px;
+            height: 160px;
+            background: -webkit-linear-gradient(right, rgba(111,111,111,0.5), rgba(255,255,255,1)),url(1.png)no-repeat;
+            background: -o-linear-gradient(right, rgba(111,111,111,0.5), rgba(255,255,255,1)),url(1.png)no-repeat;
+        }
+
+        .nine{
+            width:300px;
+            height: 100px;
+            background: -webkit-linear-gradient(left, black 5px, red 60px, yellow 100px, purple 300px);
+            background: linear-gradient(to right, black 5px, red 60px, yellow 100px, purple 300px);
+        }
+
+        .ten{
+            width:300px;
+            height: 100px;
+            background-image: -webkit-linear-gradient(black, red, yellow);
+            background-image: linear-gradient(black, red, yellow);
+        }
+
+        .eleven{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /*background-image: repeating-linear-gradient(180deg, transparent, transparent 5px, black 5px, black 10px);*/
+            background: repeating-linear-gradient(180deg, transparent, transparent 5px, black 5px, black 10px);
+        }
+
+        .twelve{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background: repeating-linear-gradient(180deg, transparent, transparent 5px, black 5px, black 10px)
+            ,repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 10px);
+        }
+
+        .thirteen{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /*background: repeating-linear-gradient(90deg,yellow,yellow 10%);*/
+            /*background: repeating-linear-gradient(90deg,yellow, blue 10%);*/
+            /*background: linear-gradient(90deg,yellow, blue 10%);*/
+            /*background: repeating-linear-gradient(90deg,yellow, yellow 10%,blue 10%);*/
+            /*background: repeating-linear-gradient(180deg,yellow, yellow 10%,blue 10%,blue 20%), repeating-linear-gradient(90deg,yellow, yellow 10%,blue 10%,blue 20%);*/
+            background: repeating-linear-gradient(180deg,transparent, transparent 10px,black 10px,black 20px)
+            ,repeating-linear-gradient(90deg,transparent, transparent 10px,black 10px,black 20px);
+        }
+
+        /*径向渐变*/
+        .car1{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(#ace, #f96, #1E90FF);
+            background:radial-gradient(#ace, #f96, #1E90FF);
+        }
+
+        .car2{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(#ace 5%, #f96 25%, #1E90FF 50%);
+            background:radial-gradient(#ace 5%, #f96 25%, #1E90FF 50%);
+        }
+
+        .car3{
+            width: 150px;
+            height: 80px;
+            /*background:-webkit-radial-gradient(bottom left,circle, #ace, #f96, #1E90FF);*/
+            /*background:radial-gradient(bottom left,circle, #ace, #f96, #1E90FF);*/
+            background:-webkit-radial-gradient(circle at bottom left, #ace, #f96, #1E90FF);
+            background:radial-gradient(circle at bottom left, #ace, #f96, #1E90FF);
+        }
+
+        .car4{
+            width: 150px;
+            height: 80px;
+            /*background:-webkit-radial-gradient(bottom left,circle, #ace, #f96, #1E90FF);*/
+            /*background:radial-gradient(bottom left,circle, #ace, #f96, #1E90FF);*/
+            background:-webkit-radial-gradient(ellipse at bottom left, #ace, #f96, #1E90FF);
+            background:radial-gradient(ellipse at bottom left, #ace, #f96, #1E90FF);
+        }
+
+        .car5{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(circle at center, #ace, #f96, #1E90FF);
+            background:radial-gradient(circle at center, #ace, #f96, #1E90FF);
+        }
+
+        .car6{
+            width: 150px;
+            height: 80px;
+            /*background:-webkit-radial-gradient(ellipse closet-corner at 30% 30%, #ace 0%, #f96 30%, #1E90FF 70%);*/
+            /*background:radial-gradient(ellipse closet-corner at 30% 30%,#ace 0%, #f96 30%, #1E90FF 70%);*/
+
+            background:-webkit-radial-gradient(ellipse farthest-corner, #ace 0%, #f96 30%, #1E90FF 70%);
+            background:radial-gradient(ellipse farthest-corner ,#ace 0%, #f96 30%, #1E90FF 70%);
+        }
+
+        .car7{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(ellipse closest-corner, #ace 0%, #f96 30%, #1E90FF 70%);
+            background:radial-gradient(ellipse closest-corner,#ace 0%, #f96 30%, #1E90FF 70%);
+        }
+
+        .car8{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(ellipse closest-side, #ace 0%, #f96 30%, #1E90FF 70%);
+            background:radial-gradient(ellipse closest-side,#ace 0%, #f96 30%, #1E90FF 70%);
+        }
+
+        .car9{
+            width: 150px;
+            height: 80px;
+            background:-webkit-radial-gradient(ellipse farthest-side, #ace 0%, #f96 30%, #1E90FF 70%);
+            background:radial-gradient(ellipse farthest-side,#ace 0%, #f96 30%, #1E90FF 70%);
+        }
+
+        .car10{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-radial-gradient(circle, black, black 5px, white 5px, white 10px);
+        }
+
+        .car11{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-radial-gradient(ellipse, black, black 5px, white 5px, white 10px);
+        }
+
+        .car12{
+            width: 400px;
+            height: 300px;
+            margin: 50px auto;
+            border: 5px solid hsla(60,50%,80%,.8);
+            background-image: -webkit-radial-gradient(50px 200px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+            background-image: radial-gradient(50px 200px at 200px 150px,hsla(120,70%,60%,.9),hsla(360,60%,60%,.9));
+            /*原文: http://www.w3cplus.com/css3/new-css3-radial-gradient.html © w3cplus.com*/
+        }
+
+        .car13{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            margin: 50px auto;
+            background-image: -webkit-radial-gradient(10em circle at top,hsla(220,89%,100%,1),hsla(30,60%,60%,.9));
+            background-image: radial-gradient(10em circle at top,hsla(220,89%,100%,1),hsla(30,60%,60%,.9));
+            -webkit-animation:sailrun  ease-out  infinite;
+            animation:sailrun 5s ease-in-out infinite both;
+        }
+
+        @-webkit-keyframes sailrun {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100%{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes sailrun {
+            0%{
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100%{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+
+        /*.car13:hover{*/
+            /*!*width: 200px;*!*/
+            /*transition: 3s;*/
+            /*transform: rotate(760deg);*/
+        /*}*/
+
+        .car16{
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: -webkit-radial-gradient( ellipse farthest-corner at 30% 30% , white 0%, red 20%, purple 30%, transparent 30%);
+            background-image: radial-gradient( ellipse farthest-corner at 30% 30% , white 0%, red 20%, purple 30%, transparent 30%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h5>线性渐变(直线扩散)</h5>
+    <p class="sail one"></p>
+    <p class="sail tow"></p>
+    <p class="sail three"></p>
+    <p class="sail four"></p>
+    <p class="sail five"></p>
+    <p class="sail six"></p>
+    <p class="sail seven"></p>
+    <p class="sail eight"></p>
+    <p class="sail nine"></p>
+    <p class="sail ten"></p>
+    <p class="sail eleven"></p>
+    <p class="sail twelve"></p>
+    <p class="sail thirteen"></p>
+
+
+    <div style="clear:both"></div>
+    <br>
+    <hr>
+    <h5>径向渐变(圆心扩散)</h5>
+    <p class="sail car1">1</p>
+    <p class="sail car2">2</p>
+    <p class="sail car3">3</p>
+    <p class="sail car4">4</p>
+    <p class="sail car5">5</p>
+    <p class="sail car6">6</p>
+    <p class="sail car7">7</p>
+    <p class="sail car8">8</p>
+    <p class="sail car9">9</p>
+    <p class="sail car10">10</p>
+    <p class="sail car11">11</p>
+    <p class="sail car12">12</p>
+    <p class="sail car13">Sail</p>
+    <p class="sail car14">14</p>
+    <p class="sail car15">15</p>
+    <p class="sail car16">16</p>
+</body>
+</html>
