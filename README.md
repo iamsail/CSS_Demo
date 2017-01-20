@@ -9,3 +9,5 @@
 - [小知识点](http://www.sail.name/CSS_Demo/小知识点.html)
 - [计组考前整理](http://www.sail.name/CSS_Demo/JZ.html)
 - [弹跳退出效果](http://www.sail.name/CSS_Demo/bounceOut.html)
+- [边框效果](http://www.sail.name/CSS_Demo/border.html)
+- [渐变](http://www.sail.name/CSS_Demo/gradient.html)
