@@ -11,3 +11,4 @@
 - [弹跳退出效果](http://www.sail.name/CSS_Demo/bounceOut.html)
 - [边框效果](http://www.sail.name/CSS_Demo/border.html)
 - [渐变](http://www.sail.name/CSS_Demo/gradient.html)
+- [旋转的立方体](http://www.sail.name/CSS_Demo/rotary-cube.html)
