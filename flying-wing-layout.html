@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <style>
+        .container{
+            overflow: hidden;
+        }
+
+        .middle,.left,.right{
+            height: 300px;
+            float: left;
+        }
+
+        .middle{
+            width: 100%;
+            background-color: darkturquoise;
+            word-break: break-all;
+        }
+
+        .middle-in{
+            margin:0 200px 0 200px;
+        }
+
+        .left{
+            width: 200px;
+            background-color: orange;
+            margin-left: -100%;
+        }
+
+        .right{
+            width: 200px;
+            background-color: purple;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="middle">
+        <div class="middle-in">
+            中间弹性区爷爷泡的茶appl eappleappleappleappleappleappleappleappleappleappleapp
+        </div>
+    </div>
+    <div class="left">左边栏</div>
+    <div class="right">右边栏</div>
+</div>
+
+<h2>双飞翼布局</h2>
+</body>
+</html>
