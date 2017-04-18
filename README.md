@@ -15,3 +15,4 @@
 - [文字描边](http://www.sail.name/CSS_Demo/text-shadow.html)
 - [圣杯布局](http://www.sail.name/CSS_Demo/grail-layout.html)
 - [双飞翼布局](http://www.sail.name/CSS_Demo/flying-wing-layout.html)
+- [CSS和JS实现时钟](http://www.sail.name/CSS_Demo/clock.html)
