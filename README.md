@@ -17,3 +17,4 @@
 - [双飞翼布局](http://www.sail.name/CSS_Demo/flying-wing-layout.html)
 - [CSS和JS实现时钟](http://www.sail.name/CSS_Demo/clock.html)
 - [纯CSS撸一个时钟](http://www.sail.name/CSS_Demo/css-clock-with-steps.html)
+- [steps练习1](http://www.sail.name/CSS_Demo/steps-test-one.html)
