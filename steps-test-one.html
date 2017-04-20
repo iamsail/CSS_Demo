@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>steps练习1</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 100px;
+            animation: test 10s 0.5s forwards;
+        }
+
+        .zero{
+            /*animation: test 10s 0.5s forwards,trans 10s 0.5s forwards;*/
+            animation: trans 10s 0.5s forwards;
+            background-color: transparent;
+            animation-timing-function:ease;
+        }
+
+        .one{
+            background-color: deepskyblue;
+            animation-timing-function:step-start;
+        }
+
+        .tow{
+            background-color: firebrick;
+            animation-timing-function:step-end;
+        }
+
+        .three{
+            background-color: gold;
+            animation-timing-function:steps(3);  // 第二个参数默认是end
+        }
+
+        .four{
+            background-color: green;
+            animation-timing-function:steps(3,start);
+        }
+
+        @keyframes test {
+            0%{
+                transform: translateX(0px);
+            }
+
+            100%{
+                transform: translateX(500px);
+            }
+        }
+
+        @keyframes trans {
+            0%{
+                background-color: transparent;
+                transform: translateX(0px) translateY(0px);
+            }
+
+            50%{
+                background-color: darkorange;
+            }
+
+            99%{
+                transform: translateX(495px) translateY(0px);
+            }
+
+            100%{
+                background-color: transparent;
+                transform: translateX(500px) translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="circle zero ">ease</div>
+<div class="circle one ">step-start</div>
+<div class="circle tow ">step-end</div>
+<div class="circle three ">steps(3,end)</div>
+<div class="circle four ">steps(3,start)</div>
+</body>
+</html>
