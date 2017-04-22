@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-radius-test</title>
+    <style>
+        .rectangle{
+            border: 2px solid black;
+            width: 150px;
+            height: 100px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        section{
+            float:left;
+            margin-right: 50px;
+        }
+
+        .one{
+            /*作用于所有边框*/
+            border-radius: 10px;
+        }
+
+        .tow{
+            /*10px 作用于 左上，右下； 40px作用于右上，左下*/
+            border-radius: 10px 40px;
+        }
+
+        .three{
+            /*10px 作用于 左上；40px 作用于 右上，左下; 70px作用于右下 */
+            border-radius: 10px 30px 70px;
+        }
+
+        .four{
+            /*10px 作用于 左上；40px 作用于 右上; 70px作用于右下 ，100px作用于左下*/
+            border-radius: 10px 40px 70px 100px;
+        }
+
+        .five{
+            border-radius: 60px/20px 40px 70px 100px;
+        }
+
+        .six{
+            border-radius: 60px 30px 40px 50px/20px 40px 70px 100px;
+        }
+
+        .seven{
+            /*border-radius: 60px 30px 40px 50px/20px 40px 70px 100px;*/
+            border-radius: 50% 50% 30px 30px ;
+        }
+
+        .eight{
+            border-radius: 50% 50% 0px 0px ;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="rectangle one">one</div>
+    <div class="rectangle tow">tow</div>
+    <div class="rectangle three">three</div>
+    <div class="rectangle four">four</div>
+</section>
+
+<section>
+    <p>然后每个值可以有两个长度,分别是椭圆的水平半径和垂直半径</p>
+    <p>以下继续进行demo演示</p>
+    <p>疑问？如何让文本垂直居中</p>
+</section>
+
+
+<section>
+    <div class="rectangle five">five</div>
+    <div class="rectangle six">six</div>
+    <div class="rectangle seven">seven</div>
+    <div class="rectangle eight">eight</div>
+</section>
+
+
+
+</body>
+</html>
