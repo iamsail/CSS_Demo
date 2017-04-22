@@ -19,3 +19,4 @@
 - [纯CSS撸一个时钟](http://www.sail.name/CSS_Demo/css-clock-with-steps.html)
 - [steps练习1](http://www.sail.name/CSS_Demo/steps-test-one.html)
 - [steps练习2](http://www.sail.name/CSS_Demo/steps-test-tow.html)
+- [border-radius-practice](http://www.sail.name/CSS_Demo/steps-test-tow.html)
