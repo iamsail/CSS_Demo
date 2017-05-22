@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>beforeunload</title>
+</head>
+<body>
+    <div>beforeunload_practice</div>
+    <script>
+//        window.addEventListener("beforeunload", function( event ) {
+//            event.preventDefault();
+//
+//        });
+
+        window.addEventListener("beforeunload", function( event ) {
+            event.returnValue = "\o/";
+        });
+
+//        window.addEventListener("beforeunload", function (e) {
+//            var confirmationMessage = "\o/";
+//            var confirmationMessage = "确定要离开本页吗";
+//
+//            (e || window.event).returnValue = confirmationMessage;     //Gecko + IE
+//            return confirmationMessage;                                //Webkit, Safari, Chrome etc.
+//        });
+    </script>
+</body>
+</html>
