@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clip-path-0</title>
+    <style>
+        img{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            animation: car 5s 1s infinite;
+            z-index: 2;
+        }
+
+
+        @keyframes car {
+            0%{
+                transform: translateX(0) rotate(0deg);
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+
+            100%{
+                transform: translateX(800PX) rotate(360deg);
+                clip-path: polygon(50% 0%, 100% 80%, 80% 100%, 0% 50%);
+            }
+        }
+    </style>
+</head>
+<body>
+<span>clip-path-0</span>
+<img src="images/78.jpg" alt="">
+<h3>clip-path-0</h3>
+</body>
+</html>
