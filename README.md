@@ -29,4 +29,4 @@
 - [border-radius-practice](http://www.sail.name/CSS_Demo/border-radius.html)
 - [关于transform的一些讨论](http://www.sail.name/CSS_Demo/why-the-transform-cannot-work-test.html)
 - [beforeunload](http://www.sail.name/CSS_Demo/HtmlApiPractice/beforeunload.html)
-- [clip-practice-one](http://www.sail.name/CSS_Demo/HtmlApiPractice/clip-practice-one.html)
+- [clip-practice-one](http://www.sail.name/CSS_Demo/clip-practice-one.html)
