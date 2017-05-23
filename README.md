@@ -30,3 +30,4 @@
 - [关于transform的一些讨论](http://www.sail.name/CSS_Demo/why-the-transform-cannot-work-test.html)
 - [beforeunload](http://www.sail.name/CSS_Demo/HtmlApiPractice/beforeunload.html)
 - [clip-practice-one](http://www.sail.name/CSS_Demo/clip-practice-one.html)
+- [clip-path-0](http://www.sail.name/CSS_Demo/clip-path-0.html)
