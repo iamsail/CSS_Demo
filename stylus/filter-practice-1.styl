@@ -1,0 +1,30 @@
+img
+  width 400px
+  height 300px
+
+.one
+  animation car0 10s 0s infinite
+
+.tow
+  animation car1 10s 0s infinite
+
+
+apple0(test)
+  $keyframe-name = test
+  @keyframes {$keyframe-name}
+    for i in 0..100
+      {1% * i}
+        filter grayscale(1% * i)
+        opacity (i/100)
+
+apple1(test)
+  $keyframe-name = test
+  @keyframes {$keyframe-name}
+    for i in 0..100
+      {1% * i}
+        filter blur(0.1px * i) invert(2% * i)
+
+
+
+apple0(car0)
+apple1(car1)

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter-practice-0</title>
+    <style>
+        img{
+            width: 400px;
+            height: 300px;
+        }
+
+        .one{
+            filter:grayscale(50%);
+            /*transition: 1s;*/
+        }
+
+        .one:hover{
+            filter:grayscale(0%);
+        }
+
+        .tow{
+            filter:blur(6px);
+        }
+
+        .tow:hover{
+            filter:blur(0px);
+        }
+
+        .three{filter:brightness(0.5);}
+        .three:hover{filter:brightness(1.2);}
+
+        .four{filter:contrast(200%);}
+        .four:hover{filter:contrast(100%);}
+
+        .five{ filter: drop-shadow(16px 16px 20px black); }
+
+        .six{ filter: hue-rotate(202deg); }
+        .six:hover{ filter: hue-rotate(0deg); }
+
+        .seven{filter: invert(159%);}
+        .seven:hover{filter: invert(0%);}
+
+        .eight{filter:saturate(200%);}
+        .eight:hover{filter:saturate(0%);}
+
+        .nine{filter:sepia(100%);}
+        .nine:hover{filter:sepia(20%);}
+    </style>
+</head>
+<body>
+<img src="./images/83.jpg" alt="" class="one">
+<img src="./images/83.jpg" alt="" class="tow">
+<img src="./images/83.jpg" alt="" class="three">
+<img src="./images/83.jpg" alt="" class="four">
+<img src="./images/83.jpg" alt="" class="five">
+<img src="./images/83.jpg" alt="" class="six">
+<img src="./images/83.jpg" alt="" class="seven">
+<img src="./images/83.jpg" alt="" class="eight">
+<img src="./images/83.jpg" alt="" class="nine">
+</body>
+</html>

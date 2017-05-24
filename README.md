@@ -31,3 +31,5 @@
 - [beforeunload](http://www.sail.name/CSS_Demo/HtmlApiPractice/beforeunload.html)
 - [clip-practice-one](http://www.sail.name/CSS_Demo/clip-practice-one.html)
 - [clip-path-0](http://www.sail.name/CSS_Demo/clip-path-0.html)
+- [filter-practice-0](http://www.sail.name/CSS_Demo/filter-practice-0.html)
+- [filter-practice-1](http://www.sail.name/CSS_Demo/filter-practice-1.html)
