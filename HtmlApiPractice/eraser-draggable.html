@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eraser</title>
+    <style>
+        #one{
+            width: 100px;
+            height: 60px;
+            border: 2px solid silver;
+            line-height:60px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            background-color: salmon;
+        }
+
+        #tow{
+            position: relative;
+            top:200px;
+            left:200px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1>橡皮擦-draggable</h1>
+    <p id="one" draggable="true" ondrag="drag(event,this)" ondrop="drop(event,this)" ondragover="allowDrop(event)">橡皮擦</p>
+    <p id="tow" draggable="true" ondrop="drop(event,this)" ondragover="allowDrop(event)">擦我啊</p>
+    <!--<p >拖拽我啊</p>-->
+
+    <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/HTML_Drag_and_Drop_API">参考一</a>
+    <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations">参考二</a>
+    <a href="https://juejin.im/post/59259b9a0ce4630058264046">参考三</a>
+    <script>
+        function drag(ev,mineDiv){
+            ev.dataTransfer.setData("text/html",mineDiv.innerHTML);
+//            alert(mineDiv.innerHTML);
+        }
+
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+
+        function drop(ev,mineDiv){
+            ev.preventDefault();
+//            srcdiv.innerHTML = mineDiv.innerHTML;
+//            mineDiv.innerHTML=ev.dataTransfer.getData("text/plain","love");
+            mineDiv.innerHTML="";
+            mineDiv.style.background = "white";
+        }
+    </script>
+</body>
+</html>
