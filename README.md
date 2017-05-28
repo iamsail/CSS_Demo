@@ -33,3 +33,5 @@
 - [clip-path-0](http://www.sail.name/CSS_Demo/clip-path-0.html)
 - [filter-practice-0](http://www.sail.name/CSS_Demo/filter-practice-0.html)
 - [filter-practice-1](http://www.sail.name/CSS_Demo/filter-practice-1.html)
+- [简单的橡皮擦](http://www.sail.name/CSS_Demo/HtmlApiPractice/eraser-draggable.html)
+- [draggable-0](http://www.sail.name/CSS_Demo/HtmlApiPractice/draggable-0.html)
