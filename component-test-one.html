@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <style>
+        .text{
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="test">
+    <img-Photo></img-Photo>
+    <img-Photo></img-Photo>
+    <img-Photo></img-Photo>
+</div>
+
+<script>
+    //重构-----组件化
+
+    var img = {
+        data:function(){
+            return {
+                message:6666,
+                text: 'text'
+            }
+        },
+//        template: '<div id="left" :class="[imgClass]"> <p id="text-left" :class="[categoryClass,myTextClass,text]" >{{ message }}</p> </div>'
+        template: '<div id="left" > <p id="text-left" :class="[text]" >{{ message }}</p> </div>'
+    };
+
+    Vue.component('imgPhoto',img);
+
+    new Vue({
+        el:"#test"
+    })
+
+</script>
+</body>
+</html>
+
+
