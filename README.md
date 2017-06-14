@@ -36,3 +36,4 @@
 - [简单的橡皮擦](http://www.sail.name/CSS_Demo/HtmlApiPractice/eraser-draggable.html)
 - [draggable-0](http://www.sail.name/CSS_Demo/HtmlApiPractice/draggable-0.html)
 - [-webkit-box-reflect-0.html](http://www.sail.name/CSS_Demo/-webkit-box-reflect-0.html)
+- [award-and-punishment.html](http://www.sail.name/CSS_Demo/award-and-punishment.html)
