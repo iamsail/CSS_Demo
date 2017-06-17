@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D练习</title>
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        -webkit-animation: tran 1.8s ease-out infinite both;
+        animation: tran 1.8s ease-out infinite both;
+    }
+    
+    @keyframes  tran{
+        0%{
+        background-color: black;
+    }
+
+        10%{
+            background-color:white;
+        }
+
+        /*15%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*20%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*25%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*30%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*35%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*20%{*/
+            /*background-color:black;*/
+        /*}*/
+        /**/
+        /*20%{*/
+            /*background-color:black;*/
+        /*}*/
+
+        /*40%{*/
+            /*background-color: white;*/
+        /*}*/
+
+        /*60%{*/
+            /*background-color: black;*/
+        /*}*/
+
+        /*80%{*/
+            /*background-color: white;*/
+        /*}*/
+
+        /*100%{*/
+            /*background-color: black;*/
+        /*}*/
+    }
+
+    .one{
+        position: relative;
+        left:40%;
+        top: 20vh;
+        width: 10%;
+        height: 150px;
+        background-color: red;
+        -webkit-animation: sail-ring 1.8s ease-out infinite both;
+        animation: sail-ring 1.8s ease-out infinite both;
+    }
+
+    @keyframes sail-ring {
+       0% {transform:translate(30px,10px)  rotateY(50deg) rotateX(50deg) rotateZ(50deg) ;}
+       20% {transform:translate(300px,40px)  rotateY(100deg) rotateX(100deg) rotateZ(100deg)    scale(1.4);
+           background-color: yellowgreen;}
+       30% {transform:translate(-150px,70px)  rotateY(150deg) rotateX(150deg) rotateZ(150deg) scale(1.8);
+           background: deepskyblue;
+       }
+       40% {transform:translate(-200px,-90px)  rotateY(200deg) rotateX(2000deg) rotateZ(200deg) scale(3.4);
+           background-color: blanchedalmond;
+       }
+       50% {transform:translate(830px,110px)  rotateY(350deg) rotateX(350deg) rotateZ(450deg) scale(4.4);
+           background-color: palegreen;
+       }
+       80% {transform:translate(400px,290px)  rotateY(4450deg) rotateX(4450deg) rotateZ(4450deg) scale(2.4);
+           background-color: pink;
+       }
+       90% {transform:translate(-480px,-600px)  rotateY(450deg) rotateX(450deg) rotateZ(450deg) scale(1.4);}
+       100% {transform:translate(-300px,-100px)  rotateY(-50deg) rotateX(450deg) rotateZ(-450deg) scale(0.4);}
+    }
+    
+    
+    /*.one:hover{*/
+        /*transition: 10s;*/
+
+        /*-webkit-perspective: 10;*/
+        /*perspective: 10;*/
+        /*background-color: deepskyblue;*/
+
+        /*!*-webkit-transform: translateZ(640px) rotateY(65deg) rotateX(45deg);*!*/
+        /*!*transform: translateZ(640px) rotateY(65deg) rotateX(45deg);*!*/
+
+        /*!*-webkit-transform:  rotateY(90deg) rotateX(90deg);*!*/
+        /*!*transform:  rotateY(90deg) rotateX(90deg);*!*/
+        /*animation: sail;*/
+        /*-webkit-transform:translate(300px,100px)  rotateY(450deg) rotateX(450deg) rotateZ(450deg) ;*/
+        /*transform:translate(300px,100px)  rotateY(450deg) rotateX(450deg) rotateZ(450deg);*/
+
+    /*}*/
+
+    /*.sail{*/
+        /*width: 550px;*/
+        /*height: 150px;*/
+        /*background-color: deepskyblue;*/
+        /*position: relative;*/
+        /*top:40%;*/
+        /*left:40%*/
+    /*}*/
+
+    /*.sail:hover{*/
+        /*transition: 20s;*/
+        /*transform: rotate(30000deg) scale(5) ;*/
+        /*background-color: orangered;*/
+    /*}*/
+</style>
+<body>
+    <div class="one">
+
+    </div>
+
+    <!--<div class="sail"></div>-->
+</body>
+</html>
