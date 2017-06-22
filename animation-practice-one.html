@@ -1,29 +1,111 @@
 <!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>手机摇一摇测试</title>
+    <meta charset="UTF-8">
+    <title>one</title>
     <style>
-        #result{
-            font-size: 40px;
+        html, body{
+            height:100%;
+        }
+        body {
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+            text-align:center;
+            color:#FFF;
+            overflow:hidden;
+            position:relative;
+            -webkit-perspective: 1500px;
+            perspective: 1500px;
+        }
+
+        article{
+            position: absolute;
+            width:100%;
+            height:100%;
+            padding:100px;
+            box-sizing:border-box;
+            -webkit-transition:all 1s ease-in-out;
+            transition:all 1s ease-in-out;
+            top:0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        #tablet{
+            background:#4ac4aa;
+            /*left:0;*/
+            /*top:0;*/
+            /*-webkit-transform:scale(1,1);*/
+            /*transform:scale(1,1);*/
+            -webkit-transform:scale(1,1) rotateY(0deg);
+            transform:scale(1,1) rotateY(0deg);
+        }
+        #wifi{
+            background:#ea5634;
+            /*left:100%;*/
+            /*top:100%;*/
+            /*-webkit-transform:scale(0,0);*/
+            /*transform:scale(0,0);*/
+            -webkit-transform:scale(0,0) rotateY(180deg);
+            transform:scale(0,0) rotateY(180deg);
+        }
+
+        h1{
+            font-size:4em;
+            border-bottom:1px solid rgba(255,255,255,.2);
+            padding-bottom:30px;
+        }
+        p{
+            color:rgba(255,255,255,.8);
+            margin-bottom:30px;
+        }
+        a{
+            font-size:1.5em;
+            padding:5px 50px;
+            border:1px solid #FFF;
+            border-radius:4px;
+            text-decoration:none;
+        }
+
+
+        #tablet.move{
+            /*left:-100%;*/
+            /*top:-100%;*/
+            /*-webkit-transform:scale(0,0);*/
+            /*transform:scale(0,0);*/
+            -webkit-transform:scale(0,0) rotateY(-180deg);
+            transform:scale(0,0) rotateY(-180deg);
+        }
+        #wifi.move{
+            /*left:0;*/
+            /*top:0;*/
+            /*-webkit-transform:scale(1,1);*/
+            /*transform:scale(1,1);*/
+            -webkit-transform:scale(1,1) rotateY(0deg);
+            transform:scale(1,1) rotateY(0deg);
         }
     </style>
 </head>
 <body>
+<article id="tablet">
+    <h1>Comprehensam</h1>
+    <p><a href="https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651226612&idx=1&sn=3ef3641e9005be44ad276e0869880775&chksm=bd4958708a3ed166d1d62dc0a424e6a40763cb750ea3278f0f33c5f4ec317f6db266cce7da49&scene=0#rd">Mel homero labores ce maluisset ... aliquam te.</a></p>
+    <a href="#wifi">Next</a>
+</article>
+<article id="wifi">
+    <h1>Adversarium</h1>
+    <p>Ea qui graece facilisi persequeris ... similique ex qui.</p>
+    <a href="#tablet">Next</a>
+</article>
+<script src="./jquery.min.js"></script>
 <script>
-    window.onload = function(){
-        var shake1 = new Shake(2000,function(obj){
-            alert("shaked");
-            alert("hehe");
-
-            var r = document.getElementById("result");
-            r.innerHTML = "x:" + obj.x　+ "";
-            r.innerHTML += "y:" + obj.y　+ "";
-            r.innerHTML += "z:" + obj.z　+ "";
+    $(document).ready(function() {
+        $('a').click(function(e){
+            e.preventDefault();
+            $('#tablet').toggleClass('move');
+            $('#wifi').toggleClass('move');
         });
-        shake1.init();
-    };
+    });
 </script>
-<div id="result"></div>
 </body>
 </html>
