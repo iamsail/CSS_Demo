@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user-defined-demo</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<ul>
+    <li data-animal-type="bird">Owl</li>
+    <li data-animal-type="fish">Salmon</li>
+    <li data-animal-type="spider">Tarantula</li>
+</ul>
+<script>
+    var animals = document.getElementsByTagName("li");
+    var str;
+    for(var i = 0; i < animals.length ; i++){
+        var  type  = console.log(animals[i].getAttribute("data-animal-type"));
+    }
+</script>
+</body>
+</html>

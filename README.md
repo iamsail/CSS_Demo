@@ -39,3 +39,5 @@
 - [award-and-punishment.html](http://www.sail.name/CSS_Demo/award-and-punishment.html)
 - [很久以前的动画小练习](http://www.sail.name/CSS_Demo/animation-test-0.html)
 - [翻转](http://www.sail.name/CSS_Demo/animation-practice-one.html)
+- [懒加载（一）](http://www.sail.name/CSS_Demo/lazyload-one.html)
+- [data-*](http://www.sail.name/CSS_Demo/HtmlApiPractice/data-user-defined-demo.html)

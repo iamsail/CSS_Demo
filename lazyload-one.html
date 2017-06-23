@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lazyload</title>
+    <style>
+        img{
+            width:500px;
+            height:500px;
+            display: block;
+        }
+
+        .lazyload{
+
+        }
+    </style>
+</head>
+<body>
+
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+<img src="./images/1.jpg" data-img="./images/2.jpg" class="lazyload">
+
+
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/lazyload.js"></script>
+<script>
+    $.imgLazyLoad()
+</script>
+</body>
+</html>
