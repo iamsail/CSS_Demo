@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_01</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+        .box div{
+            width: 20%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        .box0{
+            flex-direction: row;
+        }
+
+        .box1{
+            flex-direction: row-reverse;
+        }
+
+        .box2{
+            flex-direction: column;
+        }
+
+        .box3{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <section class="box box0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        flex-direction: row;
+    </section>
+
+    <section class="box box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        flex-direction: row;
+    </section>
+
+    <section class="box box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        flex-direction: column;
+    </section>
+
+    <section class="box box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        flex-direction: column-reverse
+    </section>
+</body>
+</html>

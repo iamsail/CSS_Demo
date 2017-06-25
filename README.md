@@ -41,3 +41,4 @@
 - [翻转](http://www.sail.name/CSS_Demo/animation-practice-one.html)
 - [懒加载（一）](http://www.sail.name/CSS_Demo/lazyload-one.html)
 - [data-*](http://www.sail.name/CSS_Demo/HtmlApiPractice/data-user-defined-demo.html)
+- [demo_flex_direction](http://www.sail.name/CSS_Demo/flex/demo_flex_direction.html)
