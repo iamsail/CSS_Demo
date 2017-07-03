@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_03</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+        .box div{
+            width: 20%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+
+        }
+
+        .box0{
+            flex-flow: row-reverse nowrap;
+        }
+
+        .box1{
+            flex-flow: row-reverse wrap;
+        }
+
+        .box2{
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .box3{
+            flex-flow: column nowrap;
+        }
+
+
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div> flex-flow: row-reverse nowrap;</div>
+</section>
+
+<section class="box box1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</section>
+
+<section class="box box2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</section>
+
+<section class="box box3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div> flex-flow: column nowrap;</div>
+</section>
+
+
+
+
+</body>
+</html>

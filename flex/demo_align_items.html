@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_05</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        div:nth-child(1){
+            height: 160px;
+        }
+
+        div:nth-child(2){
+            width: 30%;
+
+        }
+
+        div:nth-child(3){
+            height: 190px;
+            width: 5%;
+        }
+
+        div:nth-child(5){
+            height: 290px;
+        }
+
+        .box0{
+            align-items: flex-start;
+        }
+        .box1{
+            align-items: flex-end;
+        }
+        .box2{
+            align-items: center ;
+        }
+        .box3{
+            align-items:baseline;
+        }
+        .box4{
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div></div>
+    <div> align-items: flex-start;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box1">
+    <div></div>
+    <div> align-items: flex-start;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box2">
+    <div></div>
+    <div> align-items: flex-start;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box3">
+    <div>1</div>
+    <div>2( align-items: flex-start;)如果没有文字，等同于 flex-end</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</section>
+<section class="box box4">
+    <div></div>
+    <div> align-items: stretch;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

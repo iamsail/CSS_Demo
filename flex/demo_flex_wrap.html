@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_02</title>
+    <style>
+        .box{
+            display: flex;
+            background: darkturquoise;
+            margin: 12px;
+        }
+
+        .box div{
+            width: 15%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        .box0{
+            flex-wrap: nowrap;
+        }
+
+        .box1{
+            flex-wrap: wrap;
+        }
+
+        .box2{
+            flex-wrap: wrap-reverse;
+            /*flex-direction: row-reverse;*/
+        }
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>flex-wrap: none;</div>
+
+</section>
+
+
+<section class="box box1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>flex-wrap: wrap;</div>
+</section>
+
+<section class="box box2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>flex-wrap: wrap-reverse;</div>
+</section>
+
+</body>
+</html>

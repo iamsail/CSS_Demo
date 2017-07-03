@@ -43,3 +43,8 @@
 - [data-*](http://www.sail.name/CSS_Demo/HtmlApiPractice/data-user-defined-demo.html)
 - [demo_flex_direction](http://www.sail.name/CSS_Demo/flex/demo_flex_direction.html)
 - [空闲教室查询](http://www.sail.name/CSS_Demo/emptyClassRoom.html)
+- [demo_flex_wrap](http://www.sail.name/CSS_Demo/flex/demo_flex_wrap.html)
+- [demo_flex_flow](http://www.sail.name/CSS_Demo/flex/demo_flex_flow.html)
+- [demo_justify_content](http://www.sail.name/CSS_Demo/flex/demo_justify_content.html)
+- [demo_align_items](http://www.sail.name/CSS_Demo/flex/demo_align_items.html)
+- [demo_align_content](http://www.sail.name/CSS_Demo/flex/demo_align_content.html)

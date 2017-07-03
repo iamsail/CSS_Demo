@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_04</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        div:nth-child(2){
+            width: 30%;
+        }
+
+        .box0{
+            justify-content: flex-start;
+        }
+
+        .box1{
+            justify-content: flex-end;
+        }
+
+        .box2{
+            justify-content: center;
+        }
+
+        .box3{
+            justify-content: space-between;
+        }
+
+        .box4{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <div>justify-content: flex-start;</div>
+</section>
+<section class="box box1">
+    <div></div>
+    <div> justify-content: flex-end;</div>
+    <div></div>
+
+    <div></div>
+</section>
+<section class="box box2">
+    <div></div>
+    <div>justify-content: center;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+<section class="box box3">
+    <div></div>
+    <div>justify-content: center;</div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+</section>
+<section class="box box4">
+    <div></div>
+    <div> justify-content: space-around;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
