@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex_demo_06</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 500px;
+        }
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        /*div:nth-child(1){*/
+            /*height: 160px;*/
+        /*}*/
+
+        /*div:nth-child(2){*/
+            /*width: 30%;*/
+
+        /*}*/
+
+        /*div:nth-child(3){*/
+            /*height: 190px;*/
+            /*width: 5%;*/
+        /*}*/
+
+        /*div:nth-child(5){*/
+            /*height: 290px;*/
+        /*}*/
+
+        .box0{align-content: flex-start}
+        .box1{align-content: flex-end}
+        .box2{align-content: center}
+        .box3{align-content: space-between}
+        .box4{align-content: space-around}
+        .box5{align-content: stretch}
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div></div>
+    <div></div>
+    <div>flex-start</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box1">
+    <div></div>
+    <div></div>
+    <div>flex-end</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box2">
+    <div></div>
+    <div></div>
+    <div>center</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box3">
+    <div></div>
+    <div></div>
+    <div>space-between</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box4">
+    <div></div>
+    <div></div>
+    <div>space-around</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section class="box box5">
+    <div></div>
+    <div></div>
+    <div>stretch（默认值）</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>
