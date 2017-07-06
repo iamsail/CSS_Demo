@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_item_property_flex_grow</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        .box1 div:nth-child(1){flex-grow: 1}
+        .box1 div:nth-child(2){flex-grow: 1}
+        .box1 div:nth-child(3){flex-grow: 1}
+
+        .box2 div:nth-child(1){flex-grow: 1}
+        .box2 div:nth-child(2){flex-grow: 5}
+        .box2 div:nth-child(3){flex-grow: 1}
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div>0</div>
+    <div>0</div>
+    <div>0</div>
+</section>
+
+<section class="box box1">
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+</section>
+
+<section class="box box2">
+    <div>1</div>
+    <div>5</div>
+    <div>1</div>
+</section>
+<h3>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</h3>
+
+<h3>如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</h3>
+</body>
+</html>
