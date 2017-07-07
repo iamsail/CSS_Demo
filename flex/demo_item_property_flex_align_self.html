@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_item_property_flex_align_self</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+            align-items: flex-end;
+            height: 300px;
+        }
+
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+
+        div:nth-child(3){
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+<body>
+<section class="box box0">
+    <div></div>
+    <div></div>
+    <div>align-self: flex-start;</div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

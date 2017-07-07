@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+            flex: none;
+        }
+
+        .box1 div{
+            flex: auto;
+        }
+
+        /*.box2 div{*/
+            /*flex: 1 1 auto;*/
+        /*}*/
+
+        .box2 div:nth-child(3){
+            flex: 2 1 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+<h3>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</h3>
+<h3>该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+    建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</h3>
+
+<section class="box box0">
+    <div>flex:none;</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+
+<section class="box box1">
+    <div>flex:auto</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+
+<section class="box box2">
+    <div></div>
+    <div></div>
+    <div>flex: 2 1 auto;</div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

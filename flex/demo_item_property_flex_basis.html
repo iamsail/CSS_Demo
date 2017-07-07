@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_item_property_flex_basis</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        div:nth-child(2){
+            flex-basis: 2500px;
+        }
+    </style>
+</head>
+<body>
+<section class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</section>
+
+<h3>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</h3>
+<h3>它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</h3>
+<h3>也就是先确定有flex-basis的项目，再剩余的空间分配没flex-basis的</h3>
+</body>
+</html>

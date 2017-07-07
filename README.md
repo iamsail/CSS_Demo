@@ -51,3 +51,6 @@
 - [demo_item_property_order](http://www.sail.name/CSS_Demo/flex/demo_item_property_order.html)
 - [demo_item_property_flex_grow](http://www.sail.name/CSS_Demo/flex/demo_item_property_flex_grow.html)
 - [demo_item_property_flex_shrink](http://www.sail.name/CSS_Demo/flex/demo_item_property_flex_shrink.html)
+- [demo_item_property_flex_basis](http://www.sail.name/CSS_Demo/flex/demo_item_property_flex_basis.html)
+- [demo_item_property_flex](http://www.sail.name/CSS_Demo/flex/demo_item_property_flex.html)
+- [demo_item_property_flex_align_self](http://www.sail.name/CSS_Demo/flex/demo_item_property_flex_align_self.html)
