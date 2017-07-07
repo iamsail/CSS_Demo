@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo_item_property_order</title>
+    <style>
+        .box{
+            display: flex;
+            background-color: darkturquoise;
+            margin-top: 12px;
+        }
+
+
+        .box div{
+            width: 10%;
+            height: 80px;
+            background-color: orange;
+            margin: 2%;
+        }
+
+        div:nth-child(3){
+            order:-1;
+        }
+
+        div:nth-child(2){
+            order:1;
+        }
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+<p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+</body>
+</html>
