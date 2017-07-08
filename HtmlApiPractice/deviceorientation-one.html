@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        #console{
+            font-size: 40px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+ <div id="console"></div>
+<script>
+    window.addEventListener("deviceorientation",function(event){
+        var console=document.getElementById("console");
+        console.innerHTML="Z轴："+event.alpha+"</br>X轴："+event.beta+"</br>Y轴："+event.gamma;
+    });
+</script>
+</body>
+</html>
