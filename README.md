@@ -58,3 +58,4 @@
 - [deviceorientation-tow](http://www.sail.name/CSS_Demo/HtmlApiPractice/deviceorientation-tow.html)
 - [touch](http://www.sail.name/CSS_Demo/touch.html)
 - [再谈旋转的立方体](http://www.sail.name/CSS_Demo/rotary-cube-1.html)
+- [打字机动画](http://www.sail.name/CSS_Demo/typing.html)
