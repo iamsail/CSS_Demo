@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>打字动画</title>
+    <style>
+        @keyframes typing {
+            from{width : 0}
+        }
+        
+        @keyframes caret {
+            50%{border-color: transparent;}
+        }
+
+        h1{
+            font-family: "Consolas";
+            width:11ch;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .5em solid;
+            animation: typing 6s steps(11),
+                       caret 1s  steps(1) infinite;
+
+        }
+    </style>
+</head>
+<body>
+<h1 id="h1">hello world66</h1>
+
+<script>
+    var h1 = document.getElementById("h1");
+    function typing(target) {
+        console.log("执行");
+        var len = target.textContent.length,
+            s  = target.style;
+
+        s.width = len + "ch";
+        s.animationTimingFunction = "steps(" + len + "),steps(1)"
+    }
+    typing(h1);
+</script>
+</body>
+</html>
