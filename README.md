@@ -60,3 +60,4 @@
 - [再谈旋转的立方体](http://www.sail.name/CSS_Demo/rotary-cube-1.html)
 - [打字机动画](http://www.sail.name/CSS_Demo/typing.html)
 - [HTMLElement](http://www.sail.name/CSS_Demo/js/HTMLElement.html)
+- [画板](http://www.sail.name/CSS_Demo/DrawingBoard.html)
