@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画板</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <style>
+        body,div{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #cav{
+            border: 2px solid black;
+            border-radius: 4px;
+            box-shadow: 0 0 10px black;
+        }
+
+        #bk{
+            margin: 10px auto;
+            width:400px;
+            height: 36px;
+        }
+
+        .bk{
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            margin: 12px;
+            display: inline-block;
+            border: 1px dotted gray;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="bk" align="center"></div>
+<!--<canvas id="cav" width="100" height="100"></canvas>-->
+<canvas id="cav" width="1200" height="800"></canvas>
+    <script>
+var bColors = ["#000000","#999999","#CC66FF","#FF0000","#FF9900","#FFFF00","#008000","#00CCFF"];
+var col = "#FF0000";
+
+//function init() {
+//    var h = screen.height - 500;
+//    var w = screen.width - 500;
+//    $("#cav").css("width",w).css("height",h);
+//}
+
+function initBrush() {
+    for(var i = 0; i < bColors.length;i++){
+        var bk = $("<span class='bk'></span>")
+            .css("background-color",bColors[i])
+            .click(function () {
+                col = $(this).css("background-color");
+            });
+        $("#bk").append(bk);
+    }
+}
+
+function initPainter() {
+    var can = $("#cav"),self = this,x = 0,y = 0;
+    var ctx = can[0].getContext("2d");
+    ctx.lineWidth = 2;
+    can.on("mousedown",function (e) {
+        e.preventDefault();
+        ctx.strokeStyle = col;
+        x = e.offsetX;
+        y = e.offsetY;
+
+        ctx.beginPath();
+        ctx.moveTo(x,y);
+        can.on("mousemove",function (e) {
+            var nx = event.offsetX;
+            var ny = event.offsetY;
+            ctx.lineTo(x,y);
+            ctx.stroke();
+            x = nx;
+            y = ny;
+        });
+        can.on("mouseup",function () {
+            can.off("mousemove");
+        });
+    });
+}
+
+$(document).ready(function () {
+    initBrush();
+    initPainter();
+})
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
