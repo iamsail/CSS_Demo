@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM 原型</title>
+    <style>
+        div{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="a">a</div>
+<script>
+    HTMLElement.prototype.remove = function(){
+      if(this.parentNode){
+          this.parentNode.removeChild(this);
+      }
+    };
+
+    var a = document.querySelector("#a");
+    a.onclick = function () {
+        a.remove();
+    }
+
+</script>
+</body>
+</html>
